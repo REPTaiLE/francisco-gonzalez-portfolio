@@ -1,0 +1,1151 @@
+@import '../../resets/resets';
+@import '../../resets/variables';
+
+// Smartphones Small Screen
+@media screen and (min-width: 320px) {
+
+    .section-projects {
+        height: 90vh;
+        width: 100%;
+        margin-top: 5%;
+        border-radius: 10px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 1%;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 2%;
+            height: 24vh;
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .65em;
+            line-height: 1.5em;
+            color: $text-color;
+            transition: 200ms ease-out;
+        }
+    
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+
+        .project-link--light {
+            margin: 2% auto;
+            padding: 2%;
+            height: 24vh;
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .65em;
+            line-height: 1.5em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 100%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 5%;
+            width: 50vw;
+            height: 8vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: 1.7em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }   
+
+        .button-projects--light {
+            margin-top: 5%;
+            width: 50vw;
+            height: 8vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: 1.7em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            font-size: 1em;
+            line-height: 2em;
+            text-align: justify;
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: justify;
+            font-size: 1em;
+            line-height: 2em;
+
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+// Smartphones Screen
+@media screen and (min-width: 480px) {
+
+    .section-projects {
+        height: 90vh;
+        width: 100%;
+        margin-top: 5%;
+        border-radius: 10px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 1%;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 2%;
+            height: 27vh;
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $text-color;
+        }
+
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+
+        .project-link--light {
+            margin: 2% auto;
+            padding: 2%;
+            height: 27vh;
+            width: 95%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 100%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 5%;
+            width: 50vw;
+            height: 8vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: 2em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }   
+
+        .button-projects--light {
+            margin-top: 5%;
+            width: 50vw;
+            height: 8vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: 2em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            font-size: .9em;
+            line-height: 2em;
+            text-align: justify;
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: justify;
+            font-size: .9em;
+            line-height: 2em;
+
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+// Tablet Screens 
+@media screen and (min-width: 768px) {
+
+    .section-projects {
+        height: 90vh;
+        width: 95vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        margin-left: .3%;
+        border-radius: 10px;
+        padding: 50px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 1%;
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 5%;
+            height: 29vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-color;
+            transition: 200ms ease-out;
+        }
+    
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+
+        .project-link--light {
+            margin: 2% auto;
+            padding: 5%;
+            height: 29vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 100%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 5%;
+            width: 9vw;
+            height: 4vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: .75em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }   
+
+        .button-projects--light {
+            margin-top: 5%;
+            width: 9vw;
+            height: 4vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: .75em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            font-size: 1.15em;
+            line-height: 2em;
+            text-align: justify;
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: justify;
+            font-size: 1.15em;
+            line-height: 2em;
+
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+// Small Desktop Screens
+@media screen and (min-width: 1024px) {
+
+    .section-projects {
+        height: 97vh;
+        width: 85vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 2%;
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 5%;
+            height: 35vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-color;
+            transition: 200ms ease-out;
+        }
+    
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+
+        .project-link--light {
+            margin: 2% auto;
+            padding: 5%;
+            height: 35vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 90%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 90%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 1%;
+            width: 7.5vw;
+            height: 4vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: .86em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        .button-projects--light {
+            margin-top: 1%;
+            width: 7.5vw;
+            height: 4vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: .86em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.3em;
+            line-height: 2em;
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.3em;
+            line-height: 2em;
+        }
+    
+    }
+
+}
+
+// Medium Desktop Screens
+@media screen and (min-width: 1366px) {
+
+    .section-projects {
+        height: 100vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 2%;
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 5%;
+            height: 37vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-color;
+            transition: 200ms ease-out;
+        }
+    
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+
+        .project-link--light {
+            margin: 2% auto;
+            padding: 5%;
+            height: 37vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 100%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 1%;
+            width: 6vw;
+            height: 4vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: .87em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        .button-projects--light {
+            margin-top: 1%;
+            width: 6vw;
+            height: 4vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: .87em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.3em;
+            line-height: 2em;
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.3em;
+            line-height: 2em;
+        }
+    
+    }
+}
+
+// Desktop Medium Screens
+@media screen and (min-width: 1500px) {
+
+    .section-projects {
+        height: 107vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 2%;
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+
+        &__container--light {
+            margin-top: 6%;
+            padding: 2%;
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 5%;
+            height: 40vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-color;
+            transition: 200ms ease-out;
+        }
+    
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+        
+        .project-link--light {
+            margin: 2% auto;
+            padding: 5%;
+            height: 40vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 100%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 1%;
+            width: 6vw;
+            height: 4vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        .button-projects--light {
+            margin-top: 1%;
+            width: 6vw;
+            height: 4vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+    
+    }
+
+}
+
+// Desktop Big Screens
+@media screen and (min-width: 1920px) {
+
+    .section-projects {
+        height: 107vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+    
+        h2 {
+            margin-top: -2%;
+            margin-bottom: 5%;
+        }
+    
+        &__container {
+            margin-top: 6%;
+            padding: 2%;
+            width: 50%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+            justify-items: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 5;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+        }
+    
+        .project-link {
+            margin: 2% auto;
+            padding: 5%;
+            height: 40vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: $text-color;
+            transition: 200ms ease-out;
+        }
+    
+        .project-link:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+
+        .project-link--light {
+            margin: 2% auto;
+            padding: 5%;
+            height: 40vh;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-content: center;
+            gap: 1em;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: .85em;
+            color: $navy-color;
+            transition: 200ms ease-out;
+        }
+
+        .project-link--light:hover {
+            transform: scale(1.05);
+            transition: 200ms ease-in;
+            box-shadow: 0px 5px 55px 0px rgba(241, 180, 13, 0.322);
+            color: $orange-color;
+        }
+    
+        &__img {
+            height: 100%;
+            width: 100%;
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+
+        &__img--light {
+            height: 100%;
+            width: 100%;   
+            border: 3px solid $orange-color;
+            border-radius: 5px;
+        }
+    
+        // See more Button
+        .button-projects {
+            margin-top: 1%;
+            width: 6vw;
+            height: 4vh;
+            background-color: $navy-color;
+            color: $text-color;
+            border: 1px solid $orange-color;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+    
+        .button-projects:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        .button-projects--light {
+            margin-top: 1%;
+            width: 6vw;
+            height: 4vh;
+            background-color: $text-color;
+            color: $navy-color;
+            border: 2px solid $orange-color;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: $font;
+            font-weight: map-get($font-weight, bold);
+            cursor: pointer;
+            transition: 150ms ease-out;
+        }
+
+        .button-projects--light:hover {
+            background-color: $orange-color;
+            transform: scale(1.05);
+            transition: 150ms ease-in;
+        }
+
+        &__info {
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+
+        &__info--light {
+            margin-top: 2%;
+            padding-left: 5%;
+            text-align: center;
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+    
+    }
+
+}

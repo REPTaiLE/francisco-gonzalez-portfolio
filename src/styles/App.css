@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  font-family: "Quantico", sans-serif;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  background-color: #0A192F;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+  background: #072553;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(236, 234, 234); /* Color del thumb */
+  border: 2px solid #0A192F;
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E8740A;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=App.css.map */

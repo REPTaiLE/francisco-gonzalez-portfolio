@@ -1,0 +1,959 @@
+@import '../../resets/resets';
+@import '../../resets/variables';
+
+@mixin gridColumn($columns) {    
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+}
+
+// Grid Container
+.grid-containerTwo {
+    display: grid;
+    height: 170vh;
+    width: 100vw;
+    @include gridColumn(4);
+    grid-template-rows: .2fr 2fr .3fr;
+    font-family: $font;
+    font-size: 16px;
+    text-align: center; 
+
+        // Smartphones Small Screens
+        @media screen and (min-width: 320px) {
+
+            .header {
+                width: 100%;
+                height: 10vh;
+                display: grid;
+                align-items: center;
+                @include gridColumn(4);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease; /* Add transition property for smoother animation */
+                z-index: 2;
+                
+                // logo
+                .navbar__logo a {
+                    text-decoration: none;
+                    color: $text-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+            
+                .navbar__logo--light a {
+                    text-decoration: none;
+                    color: $navy-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo--light a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+        
+                // Navbar List
+                .navbarTwo__list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                    width: 280%;
+                    margin-left: -80%;
+                }
+        
+                // Items
+                .navbarTwo__item {
+                    margin-left: -34%;
+                    list-style: none;
+                    
+                    
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Toggle Buttons
+                .navbarTwo__item--darkmode {
+                    transform: scale(1.2);
+                    width: 5%;
+                    margin-left: -34%;
+                    list-style: none;
+            
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                .navbarTwo__item--light {
+                    transform: scale(1.2);
+                    margin-left: -30%;
+                    list-style: none;
+                    font-weight: map-get($font-weight , bold);
+                    
+                    a {
+                        color: $navy-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Normal Buttons
+                .navbarTwo__item--button {
+                    width: 17vw;
+                    height: 3.5vh;
+                    font-family: $font;
+                    font-size: 11px;
+                    font-weight: map-get($font-weight , bold);
+                    color: $text-color;
+                    background-color: $navy-color;
+                    border: 1px solid $orange-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--button:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+            
+                .navbarTwo__item--buttonLight {
+                    width: 17vw;
+                    height: 3.5vh;
+                    font-family: $font;
+                    font-size: 11px;
+                    font-weight: map-get($font-weight , bold);
+                    color: $navy-color;
+                    background-color: $text-color;
+                    border: 2px solid $orange-color;
+                    border-radius: 5px;
+                    margin-left: 15%;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--buttonLight:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+        
+            }
+    
+        }
+    
+        // Smartphones Normal Screens
+        @media screen and (min-width: 480px) {
+    
+            .header {
+                width: 100%;
+                height: 10vh;
+                display: grid;
+                align-items: center;
+                @include gridColumn(4);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease; /* Add transition property for smoother animation */
+                z-index: 2;
+                
+                // logo
+                .navbar__logo a {
+                    text-decoration: none;
+                    color: $text-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+            
+                .navbar__logo--light a {
+                    text-decoration: none;
+                    color: $navy-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo--light a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+        
+                // Navbar List
+                .navbarTwo__list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                    width: 250%;
+                    margin-left: -60%;
+                }
+        
+                // Items
+                .navbarTwo__item {
+                    margin-left: -34%;
+                    list-style: none;
+                    
+                    
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Toggle Buttons
+                .navbarTwo__item--darkmode {
+                    transform: scale(1.2);
+                    width: 5%;
+                    margin-left: -34%;
+                    list-style: none;
+            
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                .navbarTwo__item--light {
+                    transform: scale(1.2);
+                    margin-left: -30%;
+                    list-style: none;
+                    font-weight: map-get($font-weight , bold);
+                    
+                    a {
+                        color: $navy-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Normal Buttons
+                .navbarTwo__item--button {
+                    width: 15vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: 14px;
+                    font-weight: map-get($font-weight , bold);
+                    color: $text-color;
+                    background-color: $navy-color;
+                    border: 1px solid $orange-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--button:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+            
+                .navbarTwo__item--buttonLight {
+                    width: 15vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: 14px;
+                    font-weight: map-get($font-weight , bold);
+                    color: $navy-color;
+                    background-color: $text-color;
+                    border: 2px solid $orange-color;
+                    border-radius: 5px;
+                    margin-left: 15%;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--buttonLight:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+        
+            }
+    
+        }
+    
+        // Tablet Screens
+        @media screen and (min-width: 768px) {
+    
+            .header {
+                width: 100%;
+                height: 10vh;
+                display: grid;
+                align-items: center;
+                @include gridColumn(4);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease; /* Add transition property for smoother animation */
+                z-index: 2;
+                
+                // logo
+                .navbar__logo a {
+                    text-decoration: none;
+                    color: $text-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+            
+                .navbar__logo--light a {
+                    text-decoration: none;
+                    color: $navy-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo--light a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+        
+                // Navbar List
+                .navbarTwo__list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                    width: 220%;
+                    margin-left: -40%;
+                }
+        
+                // Items
+                .navbarTwo__item {
+                    margin-left: -34%;
+                    list-style: none;
+                    
+                    
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Toggle Buttons
+                .navbarTwo__item--darkmode {
+                    transform: scale(1.1);
+                    width: 5%;
+                    margin-left: -34%;
+                    list-style: none;
+            
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                .navbarTwo__item--light {
+                    transform: scale(1.1);
+                    margin-left: -30%;
+                    list-style: none;
+                    font-weight: map-get($font-weight , bold);
+                    
+                    a {
+                        color: $navy-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Normal Buttons
+                .navbarTwo__item--button {
+                    width: 12vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $text-color;
+                    background-color: $navy-color;
+                    border: 1px solid $orange-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--button:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+            
+                .navbarTwo__item--buttonLight {
+                    width: 12vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $navy-color;
+                    background-color: $text-color;
+                    border: 2px solid $orange-color;
+                    border-radius: 5px;
+                    margin-left: 15%;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--buttonLight:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+        
+            }
+    
+        }
+    
+        // Desktop Small Screens
+        @media screen and (min-width: 1024px) {
+    
+            .header {
+                width: 100%;
+                height: 10vh;
+                display: grid;
+                align-items: center;
+                @include gridColumn(4);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease; /* Add transition property for smoother animation */
+                z-index: 2;
+                
+                // logo
+                .navbar__logo a {
+                    text-decoration: none;
+                    color: $text-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+            
+                .navbar__logo--light a {
+                    text-decoration: none;
+                    color: $navy-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo--light a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+        
+                // Navbar List
+                .navbarTwo__list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                    width: 180%;
+                    margin-left: -20%;
+                }
+        
+                // Items
+                .navbarTwo__item {
+                    margin-left: -34%;
+                    list-style: none;
+                    
+                    
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Toggle Buttons
+                .navbarTwo__item--darkmode {
+                    transform: scale(1);
+                    width: 5%;
+                    margin-left: -34%;
+                    list-style: none;
+            
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                .navbarTwo__item--light {
+                    transform: scale(1);
+                    margin-left: -30%;
+                    list-style: none;
+                    font-weight: map-get($font-weight , bold);
+                    
+                    a {
+                        color: $navy-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Normal Buttons
+                .navbarTwo__item--button {
+                    width: 8vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $text-color;
+                    background-color: $navy-color;
+                    border: 1px solid $orange-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--button:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+            
+                .navbarTwo__item--buttonLight {
+                    width: 8vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $navy-color;
+                    background-color: $text-color;
+                    border: 2px solid $orange-color;
+                    border-radius: 5px;
+                    margin-left: 15%;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--buttonLight:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+        
+            }
+    
+        }
+    
+        // Desktop Medium Screens
+        @media screen and (min-width: 1366px) {
+    
+            .header {
+                width: 100%;
+                height: 10vh;
+                display: grid;
+                align-items: center;
+                @include gridColumn(4);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease; /* Add transition property for smoother animation */
+                z-index: 2;
+                
+                // logo
+                .navbar__logo a {
+                    text-decoration: none;
+                    color: $text-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+            
+                .navbar__logo--light a {
+                    text-decoration: none;
+                    color: $navy-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo--light a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+        
+                // Navbar List
+                .navbarTwo__list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                    width: 100%;
+                    margin-left: 20%;
+                }
+        
+                // Items
+                .navbarTwo__item {
+                    margin-left: -34%;
+                    list-style: none;
+                    
+                    
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Toggle Buttons
+                .navbarTwo__item--darkmode {
+                    transform: scale(1);
+                    width: 5%;
+                    margin-left: -34%;
+                    list-style: none;
+            
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                .navbarTwo__item--light {
+                    transform: scale(1);
+                    margin-left: -30%;
+                    list-style: none;
+                    font-weight: map-get($font-weight , bold);
+                    
+                    a {
+                        color: $navy-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Normal Buttons
+                .navbarTwo__item--button {
+                    width: 6vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $text-color;
+                    background-color: $navy-color;
+                    border: 1px solid $orange-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--button:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+            
+                .navbarTwo__item--buttonLight {
+                    width: 6vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $navy-color;
+                    background-color: $text-color;
+                    border: 2px solid $orange-color;
+                    border-radius: 5px;
+                    margin-left: 15%;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--buttonLight:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+        
+            }
+    
+        }
+    
+        // Desktop Big Screens
+        @media screen and (min-width: 1920px) {
+    
+            .header {
+                width: 100%;
+                height: 10vh;
+                display: grid;
+                align-items: center;
+                @include gridColumn(4);
+                grid-column-start: 1;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                text-align: center;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                top: 0;
+                transition: top 0.3s ease; /* Add transition property for smoother animation */
+                z-index: 2;
+                
+                // logo
+                .navbar__logo a {
+                    text-decoration: none;
+                    color: $text-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+            
+                .navbar__logo--light a {
+                    text-decoration: none;
+                    color: $navy-color;
+                    transition: 150ms ease-out;
+                }
+            
+                .navbar__logo--light a:hover {
+                    color: $orange-color;
+                    transition: 150ms ease-in;
+                }
+        
+                // Navbar List
+                .navbarTwo__list {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    grid-column-start: 3;
+                    grid-column-end: 5;
+                    width: 100%;
+                    margin-left: 20%;
+                }
+        
+                // Items
+                .navbarTwo__item {
+                    margin-left: -34%;
+                    list-style: none;
+                    
+                    
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Toggle Buttons
+                .navbarTwo__item--darkmode {
+                    transform: scale(1);
+                    width: 5%;
+                    margin-left: -34%;
+                    list-style: none;
+            
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                .navbarTwo__item--light {
+                    transform: scale(1);
+                    margin-left: -30%;
+                    list-style: none;
+                    font-weight: map-get($font-weight , bold);
+                    
+                    a {
+                        color: $navy-color;
+                        text-decoration: none;
+                        transition: 150ms ease-out;
+                    }
+            
+                    a:hover {
+                        color: $orange-color;
+                        transition: 150ms ease-in;
+                    }
+                }
+        
+                // Normal Buttons
+                .navbarTwo__item--button {
+                    width: 5vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $text-color;
+                    background-color: $navy-color;
+                    border: 1px solid $orange-color;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--button:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+            
+                .navbarTwo__item--buttonLight {
+                    width: 5vw;
+                    height: 4vh;
+                    font-family: $font;
+                    font-size: $font-size;
+                    font-weight: map-get($font-weight , bold);
+                    color: $navy-color;
+                    background-color: $text-color;
+                    border: 2px solid $orange-color;
+                    border-radius: 5px;
+                    margin-left: 15%;
+                    cursor: pointer;
+                    transition: 200ms ease-out;
+                }
+            
+                .navbarTwo__item--buttonLight:hover {
+                    color: $orange-color;
+                    transform: scale(1.06);
+                    transition: 150ms ease-in;
+                }
+        
+            }
+    
+        }
+
+    .hidden {
+        top: -100px;
+    }
+
+    .active {
+        height: 100px;
+        transition: height  .3s ease; /* Add transition for height change */
+    }
+
+}

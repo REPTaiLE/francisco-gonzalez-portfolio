@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  font-family: "Quantico", sans-serif;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  background-color: #0A192F;
+  overflow-x: hidden;
+}
+
+.grid-container {
+  display: grid;
+  height: 150vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.2fr 2fr 0.3fr;
+  font-family: "Quantico", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}/*# sourceMappingURL=Home.css.map */

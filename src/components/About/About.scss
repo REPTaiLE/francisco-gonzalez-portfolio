@@ -1,0 +1,1839 @@
+@import '../../resets/resets';
+@import '../../resets/variables';
+
+// Small Cellphones Screens
+@media screen and (min-width: 320px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        align-content: center;
+        height: 140vh;
+        position: sticky;
+        width: 100vw;
+        margin-top: 1%;
+        margin-bottom: 15%;
+        border-radius: 10px;
+        padding: 20px;
+
+        // Section One
+        &__one {
+            margin-top: -30%;
+            padding-right: 2%;
+            text-align: justify;
+
+            p {
+                line-height: 1.5em;
+                font-size: .6em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 1.5em;
+                font-size: .6em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);    
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 0%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            margin-top: 5%;
+            width: 100%;
+            height: 21vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 10%;
+            margin-bottom: 125%;
+            font-size: .7em;
+        }
+
+        // Tech List
+        &__techList {
+            margin-left: 22%;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Small Cellphones Screens
+@media screen and (min-width: 380px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        align-content: center;
+        height: 140vh;
+        position: sticky;
+        width: 100vw;
+        margin-top: 1%;
+        margin-bottom: 15%;
+        border-radius: 10px;
+        padding: 20px;
+
+        // Section One
+        &__one {
+            margin-top: 4%;
+            padding-right: 2%;
+            text-align: justify;
+
+            p {
+                line-height: 1.5em;
+                font-size: .63em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 1.5em;
+                font-size: .63em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 0%;
+        }
+
+        // Image
+        &__img--container {
+            margin-top: 5%;
+            width: 100%;
+            height: 25vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 10%;
+            margin-bottom: 125%;
+            font-size: .8em;
+        }
+
+        // Tech List
+        &__techList {
+            margin-left: 22%;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Small Cellphones Screens 
+@media screen and (min-width: 480px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        align-content: center;
+        height: 130vh;
+        position: sticky;
+        width: 100vw;
+        margin-top: 1%;
+        margin-bottom: 15%;
+        border-radius: 10px;
+        padding: 20px;
+
+        // Section One
+        &__one {
+            margin-top: 15%;
+            text-align: justify;
+
+            p {
+                line-height: 1.5em;
+                font-size: .67em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 1.5em;
+                font-size: .67em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 0%;
+        }
+
+        // Image
+        &__img--container {
+            margin-top: 5%;
+            width: 100%;
+            height: 27vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 10%;
+            margin-bottom: 100%;
+            font-size: .8em;
+        }
+
+        // Tech List
+        &__techList {
+            margin-left: 22%;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Cell Phones Screens
+@media screen and (min-width: 575px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+        justify-items: center;
+        align-content: center;
+        height: 130vh;
+        position: sticky;
+        width: 100vw;
+        margin-top: 1%;
+        margin-bottom: 15%;
+        border-radius: 10px;
+        padding: 20px;
+
+        // Section One
+        &__one {
+            margin-top: 15%;
+            text-align: justify;
+
+            p {
+                line-height: 1.8em;
+                font-size: .7em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 1.8em;
+                font-size: .7em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 0%;
+            margin-right: 5%;
+        }
+
+        // Image
+        &__img--container {
+            margin-top: 5%;
+            width: 100%;
+            height: 27vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 10%;
+            margin-bottom: 100%;
+            font-size: .8em;
+        }
+
+        // Tech List
+        &__techList {
+            margin-left: 22%;
+            margin-top: 5%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+        
+
+
+
+
+// Tablet Screens
+@media screen and (min-width: 768px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 90vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+
+        // Section One
+        &__one {
+            margin-top: 15%;
+            margin-left: 5%;
+            margin-bottom: 20%;
+            padding: .1%;
+            text-align: justify;
+
+            p {
+                line-height: 2em;
+                font-size: .761em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .761em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 15%;
+            margin-left: 5%;
+        }
+
+        // Image
+        &__img--container {
+            margin-left: 5%;
+            margin-top: 10%;
+            width: 100%;
+            height: 23vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-left: 7%;
+            margin-top: 15%;
+            margin-bottom: 0%;
+            font-size: .9em;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Small Desktop Screen
+@media screen and (min-width: 1024px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 82vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 1%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .81em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .81em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 20%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            margin-top: 5%;
+            width: 100%;
+            height: 29vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            // margin-left: 7%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 15%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Small - Intermediate Desktop Screen
+@media screen and (min-width: 1113px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 79vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 1%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .81em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .81em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 20%;
+            margin-right: 5%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            margin-top: 2%;
+            width: 100%;
+            height: 29vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            margin-left: 7%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 7%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-left: 20%;
+            margin-top: 15%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Small - Intermediate Desktop Screen
+@media screen and (min-width: 1260px) {
+    
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 73vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 1%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .84em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .84em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-right: 5%;
+            margin-top: 20%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            width: 100%;
+            height: 30vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 13%;
+            margin-left: 17%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }    
+    }
+
+}
+
+// Medium Desktop Screen
+@media screen and (min-width: 1366px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 1%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .84em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .84em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-right: 5%;
+            margin-top: 20%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            width: 100%;
+            height: 31vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            // box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-left: 17%;
+            margin-top: 13%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }
+    }    
+
+}
+
+// Medium - Intermediate Desktop Screen 
+@media screen and (min-width: 1422px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 1%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .87em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .87em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-right: 5%;
+            margin-top: 20%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            width: 100%;
+            height: 35vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-left: 15%;
+            margin-top: 14%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 10%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }
+    }    
+
+}
+
+// Medium - Intermediate Desktop Screen
+@media screen and (min-width: 1580px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 1%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .9em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .9em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-top: 20%;
+            margin-right: 5%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            width: 100%;
+            height: 37vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 10%;
+            margin-left: 15%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }
+    }    
+
+}
+
+// Medium - Intermediate Desktop Screen
+@media screen and (min-width: 1740px) {
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 96vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 2%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: .96em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: .96em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+
+            
+        }
+
+        // Section Two
+        &__two {
+            margin-right: 5%;
+            margin-top: 20%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            width: 100%;
+            height: 37vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            width: 100%;
+            margin-top: 15%;
+            margin-left: 7%;
+            margin-bottom: 0%;
+            font-size: 1em;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }
+    }
+
+}
+
+// Big Desktop Screen
+@media screen and (min-width: 1920px) {   
+
+    .section-about {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        height: 92vh;
+        width: 70vw;
+        box-shadow: 0px 0px 10px 5px rgb(160, 74, 17);
+        margin-top: 5%;
+        border-radius: 10px;
+        padding: 50px;
+
+        // Section One
+        &__one {
+            margin-bottom: 20%;
+            padding: 2%;
+            text-align: left;
+
+            p {
+                line-height: 2em;
+                font-size: 1em;
+            }
+
+            p a {
+                color: $text-color;
+                opacity: .7;
+                text-decoration: none;
+                font-weight: map-get($font-weight, bold);
+            }
+
+            p a:hover {
+                color: $orange-color;
+                transition: 200ms ease-in;
+            }
+
+            .paragraph--light {
+                line-height: 2em;
+                font-size: 1em;
+                color: $navy-color;
+
+                .anchor--light {
+                    color: $navy-color; 
+                    opacity: .7;
+                    text-decoration: none;
+                    font-weight: map-get($font-weight, bold);  
+                    font-size: 16px;  
+                }
+
+                .anchor--light:hover {
+                    color: $orange-color;
+                    transition: 200ms ease-in;
+                }
+            }
+        }
+
+        // Section Two
+        &__two {
+            margin-right: 5%;
+            margin-top: 20%;
+            padding: 20px;
+        }
+
+        // Image
+        &__img--container {
+            width: 100%;
+            height: 37vh;
+        }
+
+        &__img {
+            width: 100%;
+            height: 100%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $navy-color;
+            border: 3px solid $orange-color;
+        }
+
+        &__img--light {
+            width: 100%;
+            height: 100%;
+            margin-left: 5%;
+            background-color: $orange-color;
+            border-radius: 10px;
+            transition: 150ms ease-out;
+        }
+
+        &__img--light:hover {
+            transform: scale3d(1.01, 1.02, 1.2);
+            box-shadow: 0px 0px 10px 10px rgb(160, 74, 17);
+            transition: 200ms ease-in;
+            background-color: $text-color;
+            border: 3px solid $orange-color;
+        }
+
+        // Label
+        &__label {
+            margin-top: 10%;
+            margin-left: 7%;
+        }
+
+        // Tech List
+        &__techList {
+            margin-top: 7%;
+            margin-left: 22%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-content: center;
+
+            .list-item {
+                margin-top: 5%;
+                text-align: left;
+                width: 70%;
+                list-style-type: '▸   ';
+                color: $orange-color;
+
+                span {
+                    color: $text-color;
+                    opacity: .9;
+                }
+
+                .span-light {
+                    color: $navy-color; 
+                }
+            }
+        }
+    }
+
+}

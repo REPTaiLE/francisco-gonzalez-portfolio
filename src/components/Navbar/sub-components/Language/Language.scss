@@ -1,0 +1,34 @@
+@import '../../../../resets/resets';
+@import '../../../../resets/variables';
+
+.toggle-button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    color: $text-color;
+    transition: background-color 0.3s ease;
+  }
+
+  .toggle-button:hover {
+    color: $orange-color;
+    transition: .1s ease;
+  }
+  
+  .toggle-button.spanish {
+    color: $text-color; 
+    font-size: 16px;
+  }
+  
+  .toggle-button.spanish:hover {
+    color: $orange-color;
+  }
+  
+  .toggle-button svg {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .toggle-button.spanish svg {
+    transform: rotate(180deg);
+  }

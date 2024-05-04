@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  font-family: "Quantico", sans-serif;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  background-color: #0A192F;
+  overflow-x: hidden;
+}
+
+.contact-container {
+  height: 5vh;
+  width: 30vw;
+}
+.contact-container p {
+  opacity: 0.7;
+}
+.contact-container .contact-button {
+  margin-top: 5%;
+  width: 7vw;
+  height: 5vh;
+  font-family: "Quantico", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #0A192F;
+  border: 1px solid #E8740A;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: 200ms ease-out;
+}
+.contact-container .contact-button:hover {
+  background-color: #E8740A;
+  transform: scale3d(1.03, 1.1, 1.9);
+  transition: 200ms ease-in;
+}/*# sourceMappingURL=Contact.css.map */

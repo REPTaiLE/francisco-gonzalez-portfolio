@@ -1,0 +1,23 @@
+@import '../resets/resets';
+@import '../resets/variables';
+
+// Scrollbar Usuario
+::-webkit-scrollbar-track {
+    background: #072553;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(236, 234, 234); /* Color del thumb */
+    border: 2px solid $navy-color;
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $orange-color;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
