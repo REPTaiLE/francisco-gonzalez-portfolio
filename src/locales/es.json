@@ -1,0 +1,92 @@
+{
+    "navbar": {
+        "about-button": "Acerca De",
+        "projects-button": "Proyectos",
+        "contact-button": "Contacto",
+        "resume": "Curriculum",
+        "projects": "Projectos",
+        "link": "Es"
+    },
+    "homepage": {
+        "main-section": {
+            "title": "Hola, mi nombre es",
+            "name": "Francisco González.",
+            "subtitle": "Creo soluciones para la web.",
+            "personal-info": "Recién graduado de Generation Chile como Desarrollador Full Stack JavaScript, my enfoque en este momento está en construir buenas experiencias en la web y mejorar mi habilidad para crear soluciones basadas en sitios web accesibles y con buena apariencia.",
+            "contact-button": "Contacto",
+            "projects-button": "Projectos",
+            "section-titles": {
+                "about-title": "Acerca De",
+                "projects-title": "Projectos",
+                "contact-title": "Ponte en contacto"
+            }
+        },
+        "about-section": {
+            "paragraph": {
+                "one": "Hola!, mi nombre es Francisco y me encanta el desarrollo web. Comencé en el 2022 participando en un curso de desarrollo front-end en la USACH. Desde ese entonces cambié el paradigma que tenía acerca de la programación, porque pensaba que nunca sería capaz de escribir código.",
+                "two": "Luego seguí aprendiendo por mi cuenta mientras trabajaba al mismo tiempo, por un período de alrededor de 2 años, realizando mini proyectos personales y acumulando experiencia en el desarrollo web, ya que era Ingeniero en Prevención de Riesgos y mi objetivo es cambiar de carrera y moverme hacia la industria de TI.",
+                "three": "Por el hecho de ser autodidacta fue muy difícil y me contaron acerca de un Bootcamp llamado Generation Chile por lo que decidí aplicar al programa. En el primer intento no fui seleccionado y me sentí triste, pero me mantuvo motivado para volver a aplicar 3 meses después donde esta vez sí fui seleccionado y me uní al programa en Diciembre de 2023.",
+                "four": "Ahora, tres meses después de unirme al bootcamp trabajé en un proyecto para un cliente real, donde desarrollé una plataforma de aprendizaje digital donde las personas de la Municipalidad de Renca tendrán la opción de enrolarse en cursos online con el objetivo de disminuir la brecha de oportunidades laborales entre personas que no tienen educación superior formal y darles la oportunidad de formarse como profesionales en un área de interés específica.",
+                "five": {
+                    "a": "Hoy estoy",
+                    "b": "de",
+                    "c": "Y estoy en búsqueda de la oportunidad de trabajar como desarrollador web y seguir creciendo y disfrutando del proceso!",
+                    "d": "graduado"
+                }   
+            },
+            "stack-label": "Tenologías con las que he trabajado recientemente:"
+        },
+        "projects-section": {
+            "title": "Algunos proyectos que he construido",
+            "integrator-project": {
+                "title": "C-Renca",
+                "description": "C-Renca es una plataforma de e-learning desarrollada con el stack MERN para la Municipalidad de Renca. Considero que este es el primer proyecto real en el cual he participado.",
+                "alt": "Illustración Proyecto Integrador",
+                "title-att": "Proyecto Integrador"
+            },
+            "thunder-focus": {
+                "title": "Thunder Focus Theme",
+                "description": "Thunder Focus es un thema creado con yo-code y Theme Studio para VS Code. Este es mi primer tema creado para VSC.",
+                "alt": "Illustración Thunder Focus Theme",
+                "title-att": "Thunder Focus Theme"
+            },
+            "section-button": "Ver Más!"
+
+        },
+        "contact-section": {
+            "paragraph": "Actualmente estoy abierto a nuevas oportunidades así que mi inbox está abierto. Si quieres ponerte en contacto para temas profesionales o solo quieres decir hola, eres bienvenido/a!",
+            "button": "Contacto"
+        }
+    },
+    "projects-page": {
+        "title": "Projectos"
+    },
+    "c-renca": {
+        "subtitle": "Una plataforma de cursos online desarrollada con el stack MERN.",
+        "paragraph": {
+            "one": "Considero que este es mi primer proyecto serio o proyecto real, para la Municipalidad de Renca, mientras estuve estudiando en Generation Chile. C-Renca está pensado como un proyecto para disminuir la brecha entre personas con estudios formales y aquellos quienes no han tenido la chance de asistir a la universidad.",
+            "two": "Sin embargo, cualquiera que viva en Renca tendrá acceso a los recursos académicos disponibles en el sitio web.",
+            "three": "Primero desarrollamos los prototipos de la interfaz gráfica en Figma y luego migramos el layout hacia vainilla HTML y CSS con un poco de JS para pequeñas funcionalidades que se acercaban a una versión beta para ser presentada, de acuerdo a los lineamientos gráficos solicitados por el cliente.",
+            "four": "Una vez presentado el primer MVP y aceptado por el cliente, procedimos a migrar el proyecto de vainilla hacia React. Esto fue un proceso dificil porque fuimos aprendiendo nuevas tecnologías y técnicas mientras las aplicábamos en el mismo proyecto. Básicamente, desarrollamos C-Renca con el stack MERN junto a otras tecnologías como: Scss, Bootstrap, React-Bootstrap, Mongoose, Dotenv, Bcrypt, Jsonwebtoken y Cloudinary."
+        },
+        "stack-text": "Tecnologías utilizadas en este proyecto",
+        "github-text": "Repositorio del Proyecto",
+        "palette": "Paleta de Colores"
+    },
+    "thunder-focus": {
+        "subtitle": "Un tema radiante como el trueno para codear en la noche.",
+        "paragraph": {
+            "one": "Thunder Focus es un tema para",
+            "two": "pensado para esas noches oscuras con falta de iluminación.",
+            "three": "La paleta de colores fue algo que siempre quise implementar y en este proyecto encaja perfecto.",
+            "four": " Thunder Focus es desarrollado simplemente con Json y",
+            "five": "que es un generador de plantillas para crear extensiones para VSC.",
+            "six": "Pese al hecho de siempre estar buscando crear proyectos con React o sitios web más elaborados, ser capaz de desarrollar un tema para VSC captó mi atención. Todo lo que tenga que ver con diseño siempre será bienvenido para probar.",
+            "seven": "Este tema está disponible en el Marketplace de VSC de forma gratuita y también disponible para ser clonado en el repositorio del proyecto, así que si tu quieres clonarlo en tu máquina te agradecería que me siguieras en Github!"
+        }
+    },
+    "footer": {
+        "footer-text": "Diseñado & Desarrollado Por",
+        "title-att": "Repo del Portafolio"
+    }   
+}

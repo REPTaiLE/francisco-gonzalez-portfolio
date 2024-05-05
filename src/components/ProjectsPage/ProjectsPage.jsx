@@ -2,6 +2,7 @@ import './ProjectsPage.scss';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
 import { DarkModeContext } from '../../context/DarkModeContext';
+import { useTranslation } from 'react-i18next';
 import ToggleButton from '../Navbar/sub-components/ToggleButton/ToggleButton';
 import Language from '../Navbar/sub-components/Language/Language';
 import MainContentProjects from './sub-components/MainContentProjects';
@@ -10,6 +11,9 @@ import Footer from '../Footer/Footer';
 const ProjectsPage = () => {
     // Dark Mode Handler
     const [{theme, isDark}, toggleTheme] = useContext(DarkModeContext);
+
+    // Language Handler
+    const { t } = useTranslation();
 
     // Smooth Scrolling
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -46,7 +50,7 @@ const ProjectsPage = () => {
                     </li>
                     <li className='navbarTwo__item'>
                         <a href={cvUrl} target="_blank">
-                            <button className={isDark ? 'navbarTwo__item--button': 'navbarTwo__item--buttonLight'}>Resume</button>
+                            <button className={isDark ? 'navbarTwo__item--button': 'navbarTwo__item--buttonLight'}>{t('navbar.resume')}</button>
                         </a>
                     </li>
                 </ul>

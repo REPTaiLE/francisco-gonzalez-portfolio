@@ -1,10 +1,14 @@
 import './Footer.scss';
 import { useContext } from 'react';
 import { DarkModeContext } from '../../context/DarkModeContext';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
     // Dark Mode Context
     const [{theme, isDark}] = useContext(DarkModeContext);
+
+    // Language Handler
+    const { t } = useTranslation();
 
     return (
         <footer className='footer' style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}>
@@ -25,7 +29,7 @@ const Footer = () => {
 
             </ul>
 
-            <p id={isDark ? '' : 'paragraph-light'}>Design & Developed By <a href='#' title='Portfolio Repo' id={isDark ? '' : 'author--light'}>Francisco González</a></p>
+            <p id={isDark ? '' : 'paragraph-light'}>{t('footer.footer-text')} <a href='#' title={t('footer.title-att')} id={isDark ? '' : 'author--light'}>Francisco González</a></p>
 
         </footer>
     );

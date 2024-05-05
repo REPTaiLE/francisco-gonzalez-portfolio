@@ -14,7 +14,7 @@ const themes = {
 
 export const DarkModeContext = createContext();
 
-export const ThemeProvider = ({children}) => {
+export const ThemeProvider = ({ children }) => {
     const [isDark, setIsDark] = useState(true);
     const theme = isDark ? themes.dark : themes.light;
 

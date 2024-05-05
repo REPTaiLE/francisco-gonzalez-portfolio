@@ -1,0 +1,92 @@
+{
+    "navbar": {
+        "about-button": "About",
+        "projects-button": "Projects",
+        "contact-button": "Contact",
+        "resume": "Resume",
+        "projects": "Projects",
+        "link": "En"
+    },
+    "homepage": {
+        "main-section": {
+            "title": "Hi, my name is",
+            "name": "Francisco González.",
+            "subtitle": "I build solutions for the web.",
+            "personal-info": "Recently graduated from Generation Chile as a Fullstack JavaScript Developer, my focus is on building good web experciences and improve my ability to create solutions based on accesible websites with goog aesthetics.",
+            "contact-button": "Contact",
+            "projects-button": "Projects",
+            "section-titles": {
+                "about-title": "About Me",
+                "projects-title": "Projects",
+                "contact-title": "Get in touch"
+            }
+        },
+        "about-section": {
+            "paragraph": {
+                "one": "Hi!, my name is Francisco and I love web development. I started in 2022 when I participated on a front-end development course on USACH. Since then I change the paradigmn I had about programming, because I thought I have never be able to write code.",
+                "two": "Then I kept learning by myself while working at the same time for about 2 years, making personal mini projects and acummulating experience on web development since I was a risk prevention engineer and my aim was to shift career and move on to the TI industry until today.",
+                "three": "Because of the fact that being autodidact was pretty difficult and I was told about a bootcamp program named Generation Chile and I decided to apply to the program. In the first attempt I wasn't selected and I felt sad but It kept me motivated to apply again 3 months later where this time I was picked and joined on December 2023.",
+                "four": "Now, three months later I joined the bootcammp I have worked on a project for a real client, where I developed a digital learning platform where people of the Municipality of Renca will have the option to enroll on online courses with the goal of decreasing the differences of job opportunities between people who don't have formal superior education and give them the chance to form as professionals on a specified area of interest.",
+                "five": {
+                    "a": "Today I'm",
+                    "b": "from",
+                    "c": "and I'm looking for the chance to work as a web developer and keep growing and enjoying the journey!",
+                    "d": "graduated"
+                }   
+            },
+            "stack-label": "Technologies I’ve been working with recently:"
+        },
+        "projects-section": {
+            "title": "Here are some projects I built",
+            "integrator-project": {
+                "title": "C-Renca",
+                "description": "C-Renca is an e-learning platform developed with the MERN stack for the municipality of Renca. This is consider the first real project I participated in.",
+                "alt": "Integrator Project Picture",
+                "title-att": "Integrator Project"
+            },
+            "thunder-focus": {
+                "title": "Thunder Focus Theme",
+                "description": "Thunder Focus is a theme created with yo-code and Theme Studio for VS Code. It is my first Theme I've created for VSC.",
+                "alt": "Thunder Focus Theme Picture",
+                "title-att": "Thunder Focus Theme"
+            },
+            "section-button": "See More!"
+
+        },
+        "contact-section": {
+            "paragraph": "Now I'm currently open to new opportunities so my inbox is open. Whether you want to get in touch for professional issues or just want to say hello, you're welcome!",
+            "button": "Contact"
+        }
+    },
+    "projects-page": {
+        "title": "Projects"
+    },
+    "c-renca": {
+        "subtitle": "An online course platform developed with the MERN Stack.",
+        "paragraph": {
+            "one": "I consider this to be my first serious or real project for the Municipality of Renca while I was studying on Generation Chile. C-Renca is thinked of a project for decreasing the gap between people with formal studies and those who didn't had the chance to attend to college.",
+            "two": "However, anyone who lives in Renca will have access to the academic resources available in the website.",
+            "three": "At first, we designed the graphic interfaces prototypes on Figma and then migrated the layout into vainilla HTML and CSS with a little bit of JS for small functionalities that approached to a beta version to be presented and everything acording with the graphic guidelines requested by the client.",
+            "four": "Once presented the first MVP and accepted by the client we preceded to migrate the vainilla project into React. This was a difficult process because we were learning new technologies and tecniques while applying them in the project. We built C-Renca with the MERN Stack basically and also other technologies like: Scss, Bootstrap, React-Bootstrap, Mongoose, Dotenv, Bcrypt, Jsonwebtoken and Cloudinary."
+        },
+        "stack-text": "Technologies used in this project",
+        "github-text": "Project's Repository",
+        "palette": "Palette"
+    },
+    "thunder-focus": {
+        "subtitle": "A sparkling theme like Thunder to code at night.",
+        "paragraph": {
+            "one": "Thunder Focus is a Theme for",
+            "two": "thinked for those dark nights or the lack of illumination.",
+            "three": " The color palette was something I always wanted to use and this project fit perfectly.",
+            "four": " Thunder Focus is developed simply with Json and",
+            "five": "which is a template generator for building VSC extensions.",
+            "six": "Despite the fact I've always been looking to build React projects or websites more elaborated, being able to develop a Theme for VSC caught my attention. Everything that has to be with design will ever welcome to try it.",
+            "seven": "This theme is available at the VSC Marketplace for free and also able to be cloned in the repository of the project, so if you are going to clone it in your machine I will thank you for following me on Github!"
+        }
+    },
+    "footer": {
+        "footer-text": "Design & Developed By",
+        "title-att": "Portfolio Repo"
+    }   
+}

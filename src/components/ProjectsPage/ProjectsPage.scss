@@ -9,7 +9,7 @@
 // Grid Container
 .grid-containerTwo {
     display: grid;
-    height: 170vh;
+    height: 165vh;
     width: 100vw;
     @include gridColumn(4);
     grid-template-rows: .2fr 2fr .3fr;

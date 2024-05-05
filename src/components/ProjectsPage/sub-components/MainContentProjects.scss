@@ -587,6 +587,7 @@
         background-color: $navy-color;
         width: 100%;
         height: 80%;
+        margin-bottom: 5%;
 
         &__title {
             margin-top: 7%;
@@ -666,7 +667,8 @@
         }
 
         &__img {
-            height: 85%;
+            margin-top: 0;
+            height: 90%;
             width: 100%;
             border: 3px solid $orange-color;
             border-radius: 5px;
@@ -735,7 +737,7 @@
         .project-link {
             margin: 2% auto;
             padding: 5%;
-            height: 100%;
+            height: 90%;
             width: 90%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -759,7 +761,7 @@
         .project-link--light {
             margin: 2% auto;
             padding: 5%;
-            height: 100%;
+            height: 90%;
             width: 90%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -781,6 +783,7 @@
         }
 
         &__img {
+            margin-top: 0;
             height: 100%;
             width: 100%;
             border: 3px solid $orange-color;

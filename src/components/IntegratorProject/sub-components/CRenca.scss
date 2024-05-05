@@ -8523,7 +8523,7 @@
         grid-row-end: 3;
         width: 100%;
         height: 80%;
-        margin-top: 10%;
+        margin-top: -50%;
         margin-bottom: -77%;
 
         &__title {
@@ -8718,16 +8718,16 @@
 
             .palette-container {
                 width: 100%;
-                height: 90%;
+                height: 80%;
                 display: grid;
                 align-items: center;
                 justify-content: center;
                 grid-column-start: 1;
                 grid-column-end: 3;
-                margin-top: -1%;
                 margin-bottom: 20%;
         
                 h2 {
+                    margin-top: -10%;
                     margin-bottom: -20%;
                     color: $color-four;
                     font-size: 2.5em;
@@ -12949,16 +12949,16 @@
     
                 .palette-container {
                     width: 100%;
-                    height: 60%;
+                    height: 40%;
                     display: grid;
                     align-items: center;
                     justify-content: center;
                     grid-column-start: 1;
                     grid-column-end: 3;
-                    margin-bottom: 25%;
+                    margin-bottom: 30%;
             
                     h2 {
-                        margin-bottom: -1%;
+                        margin-bottom: -10%;
                         color: $color-four;
                         font-size: 2.5em;
                     }
@@ -13562,7 +13562,7 @@
                 grid-row-end: 2;
                 width: 13vw;
                 height: 18vh;
-                margin-top: 40%;
+                margin-top: 45%;
                 margin-right: 20%;
                 background-color: rgb(131, 53, 161);
                 text-decoration: none;
@@ -13652,12 +13652,13 @@
 
             .palette-container {
                 width: 100%;
-                height: 70%;
+                height: 50%;
                 display: grid;
                 align-items: center;
                 justify-content: center;
                 grid-column-start: 1;
                 grid-column-end: 3;
+                margin-top: -5%;
                 margin-bottom: 10%;
         
                 h2 {
