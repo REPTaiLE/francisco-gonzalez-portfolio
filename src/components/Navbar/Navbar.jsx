@@ -55,13 +55,13 @@ const Navbar = () => {
                 F G
             </motion.h2>
             <ul className='navbar__list'>
-                <li className={isDark ? 'navbar__item' : 'navbar__item--light'}>
+                <li className={isDark ? 'navbar__item' : 'navbar__item--light'} id="about.button">
                     <a href='#' onClick={(e) => scrollToSection(e, 'about')}>{t('navbar.about-button')}</a>
                 </li>
-                <li className={isDark ? 'navbar__item' : 'navbar__item--light'}>
+                <li className={isDark ? 'navbar__item' : 'navbar__item--light'} id="projects-button">
                     <a href='#' onClick={(e) => scrollToSection(e, 'projects')}>{t('navbar.projects-button')}</a>
                 </li>
-                <li className={isDark ? 'navbar__item' : 'navbar__item--light'}>
+                <li className={isDark ? 'navbar__item' : 'navbar__item--light'} id="contact-button">
                     <a href='#' onClick={(e) => scrollToSection(e, 'contact')}>{t('navbar.contact-button')}</a>
                 </li>
                 <li className={isDark ? 'navbar__item--darkmode' : 'navbar__item--light'}>
