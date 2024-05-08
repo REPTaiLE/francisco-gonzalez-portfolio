@@ -4,6 +4,7 @@ import { faPalette } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { DarkModeContext } from '../../../context/DarkModeContext';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const CRenca = () => {
     // Light Mode Handler
@@ -13,7 +14,17 @@ const CRenca = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='main-content-integrator' style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}>
+        <motion.div 
+            className='main-content-integrator' 
+            style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{
+                ease: "linear",
+                duration: .5,
+                x: { duration: 1.4 }
+            }}
+        >
             <div className='main-content-integrator__title'>
                 <h1>C-Renca</h1>
                 <h3 style={{color: isDark ? theme.color : theme.color}}>{t('c-renca.subtitle')}</h3>
@@ -51,19 +62,57 @@ const CRenca = () => {
                 </p>
 
                 <div className='icon-container-github' title='Project Repository'>
-                    <a href='https://github.com/REPTaiLE/Thunder-Focus' className='link-two' target='_blank'>
+                    <motion.a 
+                        href='https://github.com/REPTaiLE/Thunder-Focus' 
+                        className='link-two' 
+                        target='_blank'
+                        whileHover={{ scale: 1.06 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    >
                         <img src='/github-icon.png' alt='vsc-icon' />
                         <h4>{t('c-renca.github-text')}</h4>
-                    </a>
+                    </motion.a>
                 </div>
 
                 <div className='stack-container'>
                     <h2 style={{color: isDark ? theme.color : theme.color}}>{t('c-renca.stack-text')}</h2>
                     <div className='stack'>
-                        <article className='tech'><img src='/mongodb-icon.png' id='left' title='MongoDB' /></article>
-                        <article className='tech'><img src='/express-icon.png' id='right' title='Express JS' /></article>
-                        <article className='tech'><img src='/react-icon.png' id='left' title='React' /></article>
-                        <article className='tech'><img src='/nodejs-icon.png' id='right' title='NodeJS' /></article>
+                        <article className='tech'>
+                            <motion.img 
+                                src='/mongodb-icon.png' 
+                                id='left' 
+                                title='MongoDB'
+                                whileHover={{ scale: 1.06 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            />
+                        </article>
+                        <article className='tech'>
+                            <motion.img 
+                                src='/express-icon.png' 
+                                id='right' 
+                                title='Express JS' 
+                                whileHover={{ scale: 1.06 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            />
+                        </article>
+                        <article className='tech'>
+                            <motion.img 
+                                src='/react-icon.png' 
+                                id='left' 
+                                title='React'
+                                whileHover={{ scale: 1.06 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            />
+                        </article>
+                        <article className='tech'>
+                            <motion.img 
+                                src='/nodejs-icon.png' 
+                                id='right' 
+                                title='NodeJS' 
+                                whileHover={{ scale: 1.06 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            />
+                        </article>
                     </div>
                 </div>
 
@@ -71,28 +120,52 @@ const CRenca = () => {
                     <h2>{t('c-renca.palette')} <FontAwesomeIcon icon={faPalette} /></h2>
                     <br />
                     <div className='palette'>
-                        <div className='palette-one'>
+                        <motion.div 
+                            className='palette-one'
+                            whileHover={{ scale: 1.06 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
                             <h5>#D75E24</h5>
-                        </div>
-                        <div className='palette-two'>
+                        </motion.div>
+                        <motion.div 
+                            className='palette-two'
+                            whileHover={{ scale: 1.06 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
                             <h5>#E68E0C</h5>
-                        </div>
-                        <div className='palette-three'>
+                        </motion.div>
+                        <motion.div 
+                            className='palette-three'
+                            whileHover={{ scale: 1.06 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
                             <h5>#769E33</h5>
-                        </div>
-                        <div className='palette-four'>
+                        </motion.div>
+                        <motion.div 
+                            className='palette-four'
+                            whileHover={{ scale: 1.06 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
                             <h5>#009A88</h5>
-                        </div>
-                        <div className='palette-five'>
+                        </motion.div>
+                        <motion.div 
+                            className='palette-five'
+                            whileHover={{ scale: 1.06 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
                             <h5>#5FB9D3</h5>
-                        </div>
-                        <div className='palette-six'>
+                        </motion.div>
+                        <motion.div 
+                            className='palette-six'
+                            whileHover={{ scale: 1.06 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        >
                             <h5>#0192D0</h5>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>  
             </div>
-        </div>
+        </motion.div>
     );
 }
 

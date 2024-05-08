@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import './ToggleButton.scss';
 import { darkModeHandler } from '../../../../context/darkModeHandler';
+import { motion } from 'framer-motion';
 
 const ToggleButton = ({ onClick }) => {
   // Dark Mode Handler
@@ -19,11 +20,14 @@ const ToggleButton = ({ onClick }) => {
   };
 
   return (
-    <>
+    <motion.div
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+    >
         <a className={`toggle-button ${isDark ? 'dark-mode' : ''}`} onClick={toggleDarkMode} > 
             <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
         </a>
-    </>
+    </motion.div>
   );
 };
 

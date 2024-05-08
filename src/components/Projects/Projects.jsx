@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const Project = ({ project }) => {
     // Dark Mode Handler
@@ -10,20 +11,25 @@ const Project = ({ project }) => {
 
     return (
         
-        <Link to={project.link} className={isDark ? 'project-link' : 'project-link--light'}>
-                
-                <img src={project.img} className={isDark ? 'section-projects__img' : 'section-projects__img--light'} alt={project.alt} title={project.title} />
-                
-                <div className={isDark ? 'section-projects__info' : 'section-projects__info--light'}>
-                        <h3>{project.name}</h3>
-                        <br />
-                        <p style={{textAlign: 'justify'}}>
-                            {project.description}
-                        </p>
-                        <br />
-                </div>
+        <motion.div
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
+            <Link to={project.link} className={isDark ? 'project-link' : 'project-link--light'}>
+                    
+                    <img src={project.img} className={isDark ? 'section-projects__img' : 'section-projects__img--light'} alt={project.alt} title={project.title} />
+                    
+                    <div className={isDark ? 'section-projects__info' : 'section-projects__info--light'}>
+                            <h3>{project.name}</h3>
+                            <br />
+                            <p style={{textAlign: 'justify'}}>
+                                {project.description}
+                            </p>
+                            <br />
+                    </div>
 
-        </Link>
+            </Link>
+        </motion.div>
 
     );
 }
@@ -67,7 +73,12 @@ const Projects = () => {
 
             </div>
 
-            <Link to='/projects#logo'><button className={isDark ? 'button-projects' : 'button-projects--light'}>{t('homepage.projects-section.section-button')}</button></Link>
+            <motion.div
+                whileHover={{ scale: 1.07 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+                <Link to='/projects#logo'><button className={isDark ? 'button-projects' : 'button-projects--light'}>{t('homepage.projects-section.section-button')}</button></Link>
+            </motion.div>
 
         </div>
     );

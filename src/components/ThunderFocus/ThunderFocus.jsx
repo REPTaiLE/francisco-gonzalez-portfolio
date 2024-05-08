@@ -7,6 +7,7 @@ import ToggleButton from '../Navbar/sub-components/ToggleButton/ToggleButton';
 import Language from '../Navbar/sub-components/Language/Language';
 import ThunderTheme from './sub-components/ThunderTheme';
 import Footer from '../Footer/Footer';
+import { motion } from 'framer-motion';
 
 const ThunderFocus = () => {
     // Dark Mode Handler
@@ -40,11 +41,24 @@ const ThunderFocus = () => {
     return (
         <div className='grid-containerFour' style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}>
             <div className={`header ${visible ? 'active' : 'hidden'}`} style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}>
-                <h2 className={isDark ? 'navbar__logo' : 'navbar__logo--light'} title='Home'><Link to='/'>F G</Link></h2>
+                <motion.h2 
+                    className={isDark ? 'navbar__logo' : 'navbar__logo--light'} 
+                    title='Home'
+                    whileHover={{ scale: 1.06 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                    <Link to='/'>F G</Link>
+                </motion.h2>
                 <ul className='navbarTwo__list'>
                     <li className='navbarTwo__item'>
                         <Link to='/projects'>
-                            <button className={isDark ? 'navbarTwo__item--button' : 'navbarTwo__item--buttonLight'}>{t('navbar.projects')}</button>
+                            <motion.button 
+                                className={isDark ? 'navbarTwo__item--button' : 'navbarTwo__item--buttonLight'}
+                                whileHover={{ scale: 1.06 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
+                                {t('navbar.projects')}
+                            </motion.button>
                         </Link>
                     </li>
                     <li className={isDark ? 'navbarTwo__item--darkmode' : 'navbarTwo__item--light'}>
@@ -55,7 +69,13 @@ const ThunderFocus = () => {
                     </li>
                     <li className='navbarTwo__item'>
                         <a href={cvUrl} target="_blank">
-                            <button className={isDark ? 'navbarTwo__item--button': 'navbarTwo__item--buttonLight'}>{t('navbar.resume')}</button>
+                            <motion.button 
+                                className={isDark ? 'navbarTwo__item--button': 'navbarTwo__item--buttonLight'}
+                                whileHover={{ scale: 1.06 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
+                                {t('navbar.resume')}
+                            </motion.button>
                         </a>
                     </li>
                 </ul>

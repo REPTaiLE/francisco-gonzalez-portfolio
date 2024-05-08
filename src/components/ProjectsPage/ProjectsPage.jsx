@@ -7,6 +7,7 @@ import ToggleButton from '../Navbar/sub-components/ToggleButton/ToggleButton';
 import Language from '../Navbar/sub-components/Language/Language';
 import MainContentProjects from './sub-components/MainContentProjects';
 import Footer from '../Footer/Footer';
+import { motion } from 'framer-motion';
 
 const ProjectsPage = () => {
     // Dark Mode Handler
@@ -40,7 +41,14 @@ const ProjectsPage = () => {
     return (
         <div className='grid-containerTwo' style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}>
             <div className={`header ${visible ? 'active' : 'hidden'}`} style={{backgroundColor: isDark ? theme.backgroundColor : theme.backgroundColor}}>
-                <h2 className={isDark ? 'navbar__logo' : 'navbar__logo--light'} title='Home'><Link to='/'>F G</Link></h2>
+                <motion.h2 
+                    className={isDark ? 'navbar__logo' : 'navbar__logo--light'} 
+                    title='Home'
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                    <Link to='/'>F G</Link>
+                </motion.h2>
                 <ul className='navbarTwo__list'>
                     <li className={isDark ? 'navbarTwo__item--darkmode' : 'navbarTwo__item--light'}>
                         <ToggleButton onClick={toggleTheme}/>
@@ -50,7 +58,13 @@ const ProjectsPage = () => {
                     </li>
                     <li className='navbarTwo__item'>
                         <a href={cvUrl} target="_blank">
-                            <button className={isDark ? 'navbarTwo__item--button': 'navbarTwo__item--buttonLight'}>{t('navbar.resume')}</button>
+                            <motion.button 
+                                className={isDark ? 'navbarTwo__item--button': 'navbarTwo__item--buttonLight'}
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
+                                {t('navbar.resume')}
+                            </motion.button>
                         </a>
                     </li>
                 </ul>

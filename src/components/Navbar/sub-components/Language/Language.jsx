@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const Language = () => {
     // Language Handler
@@ -24,11 +25,15 @@ const Language = () => {
     };
 
     return (
-        <div style={{ opacity: contentOpacity }}>
+        <motion.div 
+            style={{ opacity: contentOpacity }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
             <a className={`toggle-button ${isEsp ? 'spanish' : ''}`} onClick={toggleLanguage} title={`${isEsp ? 'Cambiar a Inglés' : 'Change to Spanish'}`} style={{color: isEsp ? '#E8740A' : '#E8740A'}}>
                 <FontAwesomeIcon icon={isEsp ? faGlobe : faEarthAmericas} />
             </a>
-        </div>
+        </motion.div>
     );
 }
 

@@ -2,6 +2,7 @@ import './About.scss';
 import { useContext } from 'react';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const About = () => {
     // Dark Mode Context
@@ -31,7 +32,12 @@ const About = () => {
             <div className='section-about__two'>
 
                 <div className='section-about__img--container'>
-                    <img src='/profileTwo.png' className={isDark ? 'section-about__img' : 'section-about__img--light'} alt='Profile Picture' />
+                    <motion.div
+                        whileHover={{ scale: 1.03 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    >
+                        <img src='/profileTwo.png' className={isDark ? 'section-about__img' : 'section-about__img--light'} alt='Profile Picture' />
+                    </motion.div>
                 </div>
 
                 <legend className='section-about__label' style={{color: isDark ? theme.color : theme.color}}>
